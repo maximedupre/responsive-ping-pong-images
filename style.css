@@ -1,0 +1,169 @@
+#container {
+    --containerWidth: 100%;
+    --containerHeight: 700px;
+    position: relative;
+    width: var(--containerWidth);
+    height: var(--containerHeight);
+    border: 1px solid black;
+}
+
+#container > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@keyframes kfobj1x {
+    100% {
+        left: calc(var(--containerWidth) - var(--width1));
+    }
+}
+
+@keyframes kfobj1y {
+    100% {
+        top: calc(var(--containerHeight) - var(--height1));
+    }
+}
+
+#container #obj1 {
+    --width1: 100px;
+    --height1: 100px;
+    width: var(--width1);
+    height: var(--height1);
+    border: 1px solid black;
+    transform-box: view-box;
+    animation: kfobj1x 2s linear alternate infinite,
+        kfobj1y 20s linear alternate infinite;
+}
+
+@keyframes kfobj2x {
+    100% {
+        left: calc(var(--containerWidth) - var(--width2));
+    }
+}
+
+@keyframes kfobj2y {
+    100% {
+        top: calc(var(--containerHeight) - var(--height2));
+    }
+}
+
+#container #obj2 {
+    --width2: 200px;
+    --height2: 100px;
+    width: var(--width2);
+    height: var(--height2);
+    border: 1px solid black;
+    animation: kfobj2x 5s linear alternate infinite,
+        kfobj2y 11s linear alternate infinite;
+}
+
+@keyframes kfobj3x {
+    100% {
+        left: calc(var(--containerWidth) - var(--width3));
+    }
+}
+
+@keyframes kfobj3y {
+    100% {
+        top: calc(var(--containerHeight) - var(--height3));
+    }
+}
+
+#container #obj3 {
+    --width3: 100px;
+    --height3: 200px;
+    width: var(--width3);
+    height: var(--height3);
+    border: 1px solid black;
+    animation: kfobj3x 10s linear alternate infinite,
+        kfobj3y 30s linear alternate infinite;
+}
+
+@keyframes kfobj4x {
+    100% {
+        left: calc(var(--containerWidth) - var(--width4));
+    }
+}
+
+@keyframes kfobj4y {
+    100% {
+        top: calc(var(--containerHeight) - var(--height4));
+    }
+}
+
+#container #obj4 {
+    --width4: 50px;
+    --height4: 50px;
+    width: var(--width4);
+    height: var(--height4);
+    border: 1px solid black;
+    animation: kfobj4x 20s linear alternate infinite,
+        kfobj4y 3s linear alternate infinite;
+}
+
+@keyframes kfobj5x {
+    100% {
+        left: calc(var(--containerWidth) - var(--width5));
+    }
+}
+
+@keyframes kfobj5y {
+    100% {
+        top: calc(var(--containerHeight) - var(--height5));
+    }
+}
+
+#container #obj5 {
+    --width5: 100px;
+    --height5: 70px;
+    width: var(--width5);
+    height: var(--height5);
+    border: 1px solid black;
+    animation: kfobj5x 10s linear alternate infinite,
+        kfobj5y 6s linear alternate infinite;
+}
+
+@keyframes kfobj6x {
+    100% {
+        left: calc(var(--containerWidth) - var(--width6));
+    }
+}
+
+@keyframes kfobj6y {
+    100% {
+        top: calc(var(--containerHeight) - var(--height6));
+    }
+}
+
+#container #obj6 {
+    --width6: 200px;
+    --height6: 70px;
+    width: var(--width6);
+    height: var(--height6);
+    border: 1px solid black;
+    animation: kfobj6x 40s linear alternate infinite,
+        kfobj6y 6s linear alternate infinite;
+}
+
+@keyframes kfobj7x {
+    100% {
+        left: calc(var(--containerWidth) - var(--width7));
+    }
+}
+
+@keyframes kfobj7y {
+    100% {
+        top: calc(var(--containerHeight) - var(--height7));
+    }
+}
+
+#container #obj7 {
+    --width7: 200px;
+    --height7: 150px;
+    width: var(--width7);
+    height: var(--height7);
+    border: 1px solid black;
+    animation: kfobj7x 9s linear alternate infinite,
+        kfobj7y 10s linear alternate infinite;
+}
